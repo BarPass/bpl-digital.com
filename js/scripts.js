@@ -248,10 +248,17 @@ $(document).ready(function() {
 
             if (filters.indexOf(filter) == -1) {
                 $(this).addClass('inactive');
+                $(this).removeClass('prepend');
             } else {
                 $(this).removeClass('inactive');
+                $(this).addClass('prepend');
             }
         });
+
+        var masonryEl = '.masonry';
+        var prependItemsEl = '.masonry-item.prepend';
+        $(masonryEl).prepend($(prependItemsEl));
+        new Masonry(document.querySelector(masonryEl), { prepended: prependItemsEl });
 
         if (filter == 'all') {
             $(this).closest('.projects').find('.project').removeClass('inactive');
@@ -846,9 +853,6 @@ $(window).load(function() {
         }
     }, 500);
 
-    // Initialize Masonry
-    initializeMasonry();
-
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
 });
 
@@ -1242,6 +1246,13 @@ $(document).ready(function() {
 
     if (isMobileDevice()) {
         $('#banner-bottom').removeClass('hide');
+    }
+
+    // Initialize Masonry
+    if (typeof window.imagesLoaded !== 'undefined') {
+        $('.masonry').imagesLoaded(initializeMasonry);
+    } else {
+        initializeMasonry();
     }
 });
 
