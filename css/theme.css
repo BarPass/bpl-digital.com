@@ -415,6 +415,8 @@ p.lead {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
+  text-align: justify;
+
 }
 .sub {
   font-size: 12px;
@@ -541,6 +543,17 @@ ul[data-bullet] li i:first-child {
 ul.lead li {
   font-size: 16px;
   line-height: 40px;
+}
+ol.lead li {
+  font-size: 16px;
+  line-height: 40px;
+  margin-left: 16px;
+}
+ul.lead2 li {
+  font-size: 16px;
+  line-height: 40px;
+  list-style-type: disc;
+  margin-left: 16px;
 }
 /*!---------- 4. COLOURS ----------*/
 .bg-primary {
