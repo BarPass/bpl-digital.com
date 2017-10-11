@@ -1263,6 +1263,29 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
   }
 }
 
+/*shakesmart lg screens*/
+@media only screen and (min-width: 1200px) {
+  .shakesmart h2 {
+    font-size: 55px;
+    line-height: 65px;
+  }
+  .shakesmart .btn-xl {
+    font-size: 22px;
+    height: 74px;
+  }
+}
+/*shakesmart xs screens*/
+@media only screen and (max-width: 767px) {
+  .shakesmart .cover.fullscreen .container.v-align-transform {
+    top: 40%;
+  }
+}
+/*shakesmart xs and sm screens*/
+@media only screen and (max-width: 991px) {
+  .shakesmart .testimonial {
+    text-align: center;
+  }
+}
 .shakesmart .overlay:before {
   background: none;
   opacity: 0;
@@ -1272,8 +1295,6 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
   background-position: center top !important;
 }
 .shakesmart h2 {
-  font-size: 55px;
-  line-height: 65px;
   color: #555;
 }
 .shakesmart h2.bold {
@@ -1312,11 +1333,7 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
   color: #f7f7f7;
   background-color: #555;
 }
-.shakesmart .btn-xl {
-  font-size: 22px;
-  height: 74px;
-}
-.shakesmart #the-results h2, .shakesmart #the-results h4 {
+.shakesmart #the-results h2, .shakesmart #the-results h4, .shakesmart #the-results p.lead  {
   color: #fff;
 }
 .shakesmart #the-results {
