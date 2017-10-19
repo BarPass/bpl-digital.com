@@ -1262,3 +1262,83 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
     width: 100%;
   }
 }
+
+/*shakesmart lg screens*/
+@media only screen and (min-width: 1200px) {
+  .shakesmart h2 {
+    font-size: 55px;
+    line-height: 65px;
+  }
+  .shakesmart .btn-xl {
+    font-size: 22px;
+    height: 74px;
+  }
+}
+/*shakesmart xs screens*/
+@media only screen and (max-width: 767px) {
+  .shakesmart .cover.fullscreen .container.v-align-transform {
+    top: 40%;
+  }
+}
+/*shakesmart xs and sm screens*/
+@media only screen and (max-width: 991px) {
+  .shakesmart .testimonial {
+    text-align: center;
+  }
+}
+.shakesmart .overlay:before {
+  background: none;
+  opacity: 0;
+}
+.shakesmart .background-image-holder {
+  top: -30px !important;
+  background-position: center top !important;
+}
+.shakesmart h2 {
+  color: #555;
+}
+.shakesmart h2.bold {
+  font-weight: 700 !important;
+}
+.shakesmart h2.uppercase {
+  letter-spacing: 2px;
+}
+.shakesmart .v-align-transform h2 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.shakesmart .v-align-transform h2 span {
+  font-weight: 300;
+}
+.shakesmart .v-align-transform {
+  top: 70%;
+}
+.shakesmart .btn-white {
+  padding: 0 50px;
+  background-color: #fff;
+  color: #555;
+  border: 0;
+}
+.shakesmart .btn-white:hover {
+  color: #fff;
+  background-color: #555;
+}
+.shakesmart .btn-gray {
+  padding: 0 50px;
+  background-color: #f7f7f7;
+  color: #555;
+  border: 0;
+}
+.shakesmart .btn-gray:hover {
+  color: #f7f7f7;
+  background-color: #555;
+}
+.shakesmart #the-results h2, .shakesmart #the-results h4, .shakesmart #the-results p.lead  {
+  color: #fff;
+}
+.shakesmart #the-results {
+  background-image: url('/img/shakesmart-bg2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
