@@ -390,11 +390,48 @@
       </div>
     </div>
 
+    <!-- Modal -->
+    <div id="ss-data-entry" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <form id="ss-form" action="shakesmart.html" netlify>
+            <div class="modal-header">
+              <h1 class="uppercase text-center">Complete information to see case study</h1>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <input type="text" name="fullname" class="validate-required" placeholder="Full Name*" required />
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="email" class="validate-required validate-email" placeholder="Email Address*" required />
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="phone" class="validate-required" placeholder="Phone Number*" required />
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="company" placeholder="Company" />
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="job" placeholder="Job Title" />
+                  </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <input type="submit" id="submit" value="View Case Study" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/flexslider.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/shakesmart.js"></script>
   </body>
 </html>
