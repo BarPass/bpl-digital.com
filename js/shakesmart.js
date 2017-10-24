@@ -2,7 +2,7 @@ var onReady = function() {
   var cookie = 'SS_DATA_ENTERED';
   if (!mr_cookies.hasItem(cookie)) {
     $('#ss-data-entry').modal();
-    $('#ss-form').on('submit', function(e) {
+    $('#shakesmart-case-study-form').on('submit', function(e) {
       // e.preventDefault();
       // var name = $('#ss-form [name="fullname"]').val(),
       //     email = $('#ss-form [name="email"]').val(),
