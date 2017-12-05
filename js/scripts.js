@@ -1198,7 +1198,7 @@ $(document).ready(function() {
 
     // Start Kiosk case study popup
     var popupKioskBody = $('<div id="kiosk-popup" class="before-popup"/>');
-    var popupKioskText = $('<p/>', {'html': 'See how kiosk ordering can help your business increase sales by 20% and reduce payroll by 25%.'});
+    var popupKioskText = $('<p/>', {'html': 'See how kiosk ordering can help your business <u>increase sales by 20%</u> and <u>reduce payroll by 25%</u>.'});
     var popupKioskClose = $('<i class="popup-close"/>');
     var popupKioskLinkWrapper = $('<div/>', {class: 'link-wrapper'})
     var popupKioskLink = $('<a/>', {href: '/shakesmart.html', 'class': 'btn btn-lg mb-xs-56 btn-block', 'html':'Click here to learn more'});
