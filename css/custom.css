@@ -1378,3 +1378,14 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
     margin-top: 100px;
   }
 }
+
+#kiosk-popup.before-popup {
+  height: 280px;
+}
+#kiosk-popup.before-popup p {
+  margin-top: 50px;
+}
+#kiosk-popup.before-popup .link-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
