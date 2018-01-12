@@ -1196,29 +1196,6 @@ $(document).ready(function() {
     popupBody.append(popupClose, popupHeading, popupText, popupForm);
     $('body').append(popupBody);
 
-    // Start Kiosk case study popup
-    var popupKioskBody = $('<div id="kiosk-popup" class="before-popup"/>');
-    var popupKioskText = $('<p/>', {'html': 'See how kiosk ordering can help your business <u>increase sales by 20%</u> and <u>reduce payroll by 25%</u>.'});
-    var popupKioskClose = $('<i class="popup-close"/>');
-    var popupKioskLinkWrapper = $('<div/>', {class: 'link-wrapper'})
-    var popupKioskLink = $('<a/>', {href: '/shakesmart.html', 'class': 'btn btn-lg mb-xs-56 btn-block', 'html':'Click here to learn more'});
-
-    popupKioskLinkWrapper.append(popupKioskLink);
-    popupKioskBody.append(popupKioskClose, popupKioskText, popupKioskLinkWrapper);
-    $('body').append(popupKioskBody);
-    if (!mr_cookies.hasItem('user_kiosk_popup') && window.location.pathname.indexOf('shakesmart') === -1) {
-        $('.before-popup-bg').fadeIn();
-        $('#kiosk-popup.before-popup').fadeIn();
-    }
-    $('#kiosk-popup a').on('click', function(e) {
-        e.preventDefault();
-        var exp = new Date();
-        exp.setMonth(exp.getMonth() + 1); // show again after a month
-        mr_cookies.setItem('user_kiosk_popup', 1, exp);
-        window.location.href = $(this).prop('href');
-    });
-    // End Kiosk case study popup
-
     // Exit intent trigger
     addEvent(document, 'mouseout', function(evt) {
         if (evt.toElement == null && evt.relatedTarget == null && checkPopup.arghPopupAgain) {
@@ -1231,7 +1208,7 @@ $(document).ready(function() {
     });
 
     // Closing the Popup Box
-    $('.before-popup .popup-close, .before-popup-bg').click(function(){
+    $('body').on('click', '.before-popup .popup-close, .before-popup-bg', function() {
         $('.before-popup-bg').fadeOut();
         $('.before-popup').fadeOut();
     });
