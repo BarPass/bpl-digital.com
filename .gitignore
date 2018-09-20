@@ -4,3 +4,4 @@ config.codekit
 
 #os x
 .DS_Store
+.idea/
