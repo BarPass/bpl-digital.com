@@ -1389,3 +1389,138 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+
+
+
+/*kioskpage lg screens*/
+@media only screen and (min-width: 1200px) {
+  .kioskpage h2 {
+    font-size: 55px;
+    line-height: 65px;
+  }
+  .kioskpage .btn-xl {
+    font-size: 22px;
+    height: 74px;
+  }
+}
+.price li {
+    list-style: disc;
+}
+.price ul {
+	padding: 0 15px;
+}
+/*kiosk xs screens*/
+@media only screen and (max-width: 767px) {
+  .kioskpage .cover.fullscreen .container.v-align-transform {
+    top: 40%;
+  }
+}
+/*kiosk xs and sm screens*/
+@media only screen and (max-width: 991px) {
+  .kioskpage .testimonial {
+    text-align: center;
+  }
+}
+.kioskpage .overlay:before {
+  background: none;
+  opacity: 0;
+}
+.kioskpage .background-image-holder {
+  top: -30px !important;
+  background-position: center top !important;
+}
+.kioskpage h2 {
+  color: #555;
+}
+.kioskpage h2.bold {
+  font-weight: 700 !important;
+}
+.kioskpage h2.uppercase {
+  letter-spacing: 2px;
+}
+.kioskpage .v-align-transform h2 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.kioskpage .v-align-transform h2 span {
+  font-weight: 300;
+}
+.kioskpage .v-align-transform {
+}
+.kioskpage .btn-white {
+  padding: 0 50px;
+  background-color: #fff;
+  color: #555;
+  border: 0;
+}
+.kioskpage .btn-white:hover {
+  color: #fff;
+  background-color: #555;
+}
+.kioskpage .btn-gray {
+  padding: 0 50px;
+  background-color: #f7f7f7;
+  color: #555;
+  border: 0;
+}
+.kioskpage .btn-gray:hover {
+  color: #f7f7f7;
+  background-color: #555;
+}
+.kioskpage #the-results h2, .kioskpage #the-results h4, .kioskpage #the-results p.lead  {
+  color: #fff;
+}
+.kioskpage #the-results {
+  background-image: url('../img/shakesmart-bg2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#ss-data-entry .modal-content {
+  border-radius: 0;
+}
+#ss-data-entry .modal-header {
+  border-bottom: 0;
+}
+#ss-data-entry .modal-header h1 {
+  font-size: 24px;
+  line-height: 1.3;
+  margin: 35px 0 15px;
+  letter-spacing: 2px;
+}
+#ss-data-entry .modal-body {
+  padding: 10px 50px 0;
+}
+#ss-data-entry .modal-footer {
+  padding: 15px 50px;
+  border-top: 0;
+}
+@media only screen and (max-width: 480px) {
+  #ss-data-entry .modal-header h1 {
+    font-size: 20px;
+  }
+  #ss-data-entry .modal-body {
+    padding: 10px 20px 0;
+  }
+  #ss-data-entry .modal-footer {
+    padding: 15px 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #ss-data-entry .modal-dialog {
+    margin-top: 100px;
+  }
+}
+
+#kiosk-popup.before-popup {
+  height: 280px;
+}
+#kiosk-popup.before-popup p {
+  margin-top: 50px;
+}
+#kiosk-popup.before-popup .link-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
