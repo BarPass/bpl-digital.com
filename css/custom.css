@@ -387,9 +387,13 @@ iframe[name='google_conversion_frame'] {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: absolute;
   z-index: 999;
-  top: 55px;
+  top: 89px;
   left: 0;
   right: 0;
+}
+
+.subnav-container.no-header-banner {
+  top: 55px;
 }
 
 .subnav-container.fixed {
@@ -1523,4 +1527,18 @@ nav.bg-dark .menu > li:nth-child(n+2) > a.active {
 #kiosk-popup.before-popup .link-wrapper {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+#covid-19-banner {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  background-color: #3075B0;
+  color: #fff;
+  text-align: center;
+  padding: 5px 15px;
+}
+#covid-19-banner a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: underline;
 }
