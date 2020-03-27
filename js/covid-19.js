@@ -2,7 +2,7 @@ const Sharer = {
   init: () => {
     const url = window.location.href;
 
-    const twitterParams = $.param({ url, text: `Great article from ${url}` });
+    const twitterParams = $.param({ text: `Great article from ${url}` });
     const twitterHref = `https://twitter.com/intent/tweet?${twitterParams}`;
     $('a.twitter-share-button').attr('href', twitterHref);
 
