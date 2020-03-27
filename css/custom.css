@@ -392,7 +392,8 @@ iframe[name='google_conversion_frame'] {
   right: 0;
 }
 
-.subnav-container.no-header-banner {
+.subnav-container.no-header-banner,
+.subnav-container.fixed {
   top: 55px;
 }
 
